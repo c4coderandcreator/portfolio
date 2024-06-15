@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const form = useRef();
@@ -51,6 +52,23 @@ export default function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title>Contact - Anay Singh</title>
+        <meta
+          name="description"
+          content="Get in touch with Anay Singh for collaboration, project inquiries, or to connect and discuss Full Stack Development opportunities."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://anaysingh.in/contact" />
+        <meta property="og:title" content="Contact - Anay Singh" />
+        <meta
+          property="og:description"
+          content="Get in touch with Anay Singh for collaboration, project inquiries, or to connect and discuss Full Stack Development opportunities."
+        />
+        <meta property="og:url" content="https://anaysingh.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_to_image" />
+      </Helmet>
       <div className="h-screen">
         <div className="justify-center text-center mt-20 md:mt-24">
           <h1 className="font-monoDM font-medium text-2xl md:text-3xl text-webbut-400 mb-4">

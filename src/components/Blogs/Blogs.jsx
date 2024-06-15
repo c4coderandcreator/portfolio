@@ -1,10 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 function Blogs() {
   return (
     <>
+      <Helmet>
+        <title>Blogs - Anay Singh</title>
+        <meta
+          name="description"
+          content="Read insightful blogs by Anay Singh, covering various topics on Full Stack Development, new technologies, and industry trends."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://anaysingh.in/blogs" />
+        <meta property="og:title" content="Blogs - Anay Singh" />
+        <meta
+          property="og:description"
+          content="Read insightful blogs by Anay Singh, covering various topics on Full Stack Development, new technologies, and industry trends."
+        />
+        <meta property="og:url" content="https://anaysingh.in/blogs" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_to_image" />
+      </Helmet>
+
       <div className="justify-center text-center mt-20 md:mt-24">
         <h1 className="font-monoDM font-medium text-2xl md:text-3xl text-webbut-400 md:mb-8">
           My Blogs

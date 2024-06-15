@@ -5,9 +5,28 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Anay Singh - Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Welcome to Anay Singh's portfolio. Explore my projects and learn more about my experience as a Full Stack Developer specializing in the MERN stack."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://anaysingh.in/home" />
+        <meta property="og:title" content="Anay Singh - Full Stack Developer" />
+        <meta
+          property="og:description"
+          content="Welcome to Anay Singh's portfolio. Explore my projects and learn more about my experience as a Full Stack Developer specializing in the MERN stack."
+        />
+        <meta property="og:url" content="https://anaysingh.in/home" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_to_image" />
+      </Helmet>
+
       <div className="flex flex-col py-6 md:py-5 text-center justify-center items-center w-screen mx-auto mt-10 md:mt-24">
         <div className="justify-center">
           <img

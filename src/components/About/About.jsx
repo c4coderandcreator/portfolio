@@ -1,10 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Helmet } from "react-helmet-async";
 import Footer from "../Footer/Footer";
 import Myexperience from "./Myexperience";
 
 function About() {
   return (
     <>
+      <Helmet>
+        <title>About - Anay Singh</title>
+        <meta
+          name="description"
+          content="Learn more about Anay Singh, a passionate Full Stack Developer with expertise in the MERN stack. Discover his journey, skills, and interests."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://anaysingh.in/about" />
+        <meta property="og:title" content="About - Anay Singh" />
+        <meta
+          property="og:description"
+          content="Learn more about Anay Singh, a passionate Full Stack Developer with expertise in the MERN stack. Discover his journey, skills, and interests."
+        />
+        <meta property="og:url" content="https://anaysingh.in/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_to_image" />
+      </Helmet>
       {/* About */}
       <div className="flex flex-col items-center sm:overflow-auto h-full mt-20 md:mt-24">
         <div>

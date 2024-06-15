@@ -18,9 +18,14 @@ import Myprojects from "./components/Myprojects/Myprojects";
 import Blogs from "./components/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
 
+import { HelmetProvider } from "react-helmet-async";
+
 import ReactGA from "react-ga4";
-ReactGA.initialize("G-LSLL59HTXK");
-ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+ReactGA.initialize("G-69DNZ1B4SJ");
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +43,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );
