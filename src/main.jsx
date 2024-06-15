@@ -18,6 +18,10 @@ import Myprojects from "./components/Myprojects/Myprojects";
 import Blogs from "./components/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
 
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-LSLL59HTXK");
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
